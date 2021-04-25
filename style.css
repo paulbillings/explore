@@ -25,7 +25,7 @@ nav .logo {
 .container img {
   width: 100%;
   position: absolute;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -41,12 +41,13 @@ nav .logo {
 .content {
   width: 100%;
   background: rgb(24, 24, 24);
-  min-height: 100vh;
+  min-height: 110vh;
   z-index: 2;
+  position: absolute;
 }
 
 .content img {
-  height: 20vw;
+  width: 30vw;
 }
 
 .content-images {
@@ -54,4 +55,33 @@ nav .logo {
   justify-content: space-around;
   align-items: center;
   min-height: 60vh;
+  text-align: center;
+}
+
+.text {
+  padding: 2rem 20rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 1rem 1rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .content-images {
+    flex-direction: column;
+  }
+
+  .content img {
+    width: 60vw;
+  }
+
+  .text {
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+  }
 }

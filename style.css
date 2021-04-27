@@ -98,6 +98,10 @@ h3 {
     width: 60vw;
   }
 
+  .content-images h3 {
+    padding-bottom: 3rem;
+  }
+
   .text {
     padding: 2rem 1rem;
     font-size: 1.4rem;

@@ -12,6 +12,7 @@ nav {
   padding: 3rem 10rem;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 nav .logo {
@@ -40,8 +41,8 @@ nav .logo {
 
 .content {
   width: 100%;
-  background: rgb(24, 24, 24);
-  min-height: 110vh;
+  background: black;
+  min-height: 120vh;
   z-index: 2;
   position: absolute;
 }
@@ -51,6 +52,7 @@ nav .logo {
 }
 
 .content-images {
+  padding-top: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -58,14 +60,30 @@ nav .logo {
   text-align: center;
 }
 
+.content-images h4,
+h3 {
+  margin: 1vh 10vw;
+  text-align: left;
+}
+
 .text {
-  padding: 2rem 20rem;
+  padding: 2rem 10rem;
+  font-size: 1.9rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 0 20rem;
   font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
   nav {
     padding: 1rem 1rem;
+  }
+
+  nav h1 {
+    font-size: 0.8rem;
   }
 
   .main-title {
@@ -81,7 +99,12 @@ nav .logo {
   }
 
   .text {
-    padding: 1rem 1rem;
-    font-size: 0.8rem;
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    padding: 1rem 2rem 0 2rem;
+    font-size: 0.9rem;
   }
 }
